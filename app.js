@@ -77,7 +77,7 @@ const store = {
     filter: {
         category: 'all',
         spicy: 3,
-        price: 30000
+        price: 50000 // Default to "All" (Max coverage)
     },
     result: null
 };
@@ -137,9 +137,15 @@ function renderHero(element) {
                             <span id="price-label" class="text-neon-cyan font-bold">3만원 이하</span>
                         </div>
                         <div class="flex gap-2">
-                            <button data-price="10000" class="price-btn flex-1 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-sm">만원 이하</button>
-                            <button data-price="20000" class="price-btn flex-1 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-sm">2만원</button>
-                            <button data-price="30000" class="price-btn flex-1 py-2 rounded-lg bg-neon-cyan bg-opacity-20 text-neon-cyan border border-neon-cyan text-sm">3만원+</button>
+                            ${[
+            { val: 10000, label: '만원 이하' },
+            { val: 20000, label: '2만원' },
+            { val: 50000, label: '3만원+' }
+        ].map(p => `
+                                <button data-price="${p.val}" class="price-btn flex-1 py-2 rounded-lg text-sm transition ${store.filter.price === p.val ? 'bg-neon-cyan bg-opacity-20 text-neon-cyan border border-neon-cyan' : 'bg-gray-700 hover:bg-gray-600 text-gray-300'}">
+                                    ${p.label}
+                                </button>
+                            `).join('')}
                         </div>
                     </div>
                 </div>
