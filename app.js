@@ -321,9 +321,9 @@ function showResult(container, cardContainer, food) {
                     <button id="retry-btn" class="py-3 rounded-xl border border-gray-600 hover:border-white transition text-gray-300">
                         🔄 다시 뽑기
                     </button>
-                    <button id="map-btn" class="py-3 rounded-xl bg-neon-purple hover:bg-purple-600 text-white font-bold shadow-lg shadow-purple-900/50">
+                    <a id="map-link" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-3 rounded-xl bg-neon-purple hover:bg-purple-600 text-white font-bold shadow-lg shadow-purple-900/50 transition-all duration-300">
                         📍 지도 보기
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -335,10 +335,9 @@ function showResult(container, cardContainer, food) {
         renderSolution(document.getElementById('solution-section'), true);
     });
 
-    cardContainer.querySelector('#map-btn').addEventListener('click', () => {
-        const query = encodeURIComponent(`${food.name} 맛집`);
-        window.open(`https://www.google.com/maps/search/${query}`, '_blank');
-    });
+    const mapLink = cardContainer.querySelector('#map-link');
+    const query = encodeURIComponent(`${food.name} 맛집`);
+    mapLink.href = `https://map.naver.com/v5/search/${query}`;
 }
 
 // [CTA Component]
