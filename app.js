@@ -321,9 +321,9 @@ function showResult(container, cardContainer, food) {
                     <button id="retry-btn" class="py-3 rounded-xl border border-gray-600 hover:border-white transition text-gray-300">
                         🔄 다시 뽑기
                     </button>
-                    <a id="map-link" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-3 rounded-xl bg-neon-purple hover:bg-purple-600 text-white font-bold shadow-lg shadow-purple-900/50 transition-all duration-300">
+                    <button id="map-btn" class="flex items-center justify-center py-3 rounded-xl bg-neon-purple hover:bg-purple-600 text-white font-bold shadow-lg shadow-purple-900/50 transition-all duration-300">
                         📍 지도 보기
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -335,9 +335,15 @@ function showResult(container, cardContainer, food) {
         renderSolution(document.getElementById('solution-section'), true);
     });
 
-    const mapLink = cardContainer.querySelector('#map-link');
-    const query = encodeURIComponent(`${food.name} 맛집`);
-    mapLink.href = `https://map.naver.com/v5/search/${query}`;
+    cardContainer.querySelector('#map-btn').addEventListener('click', () => {
+        const query = encodeURIComponent(`${food.name} 맛집`);
+        const url = `https://map.naver.com/v5/search/${query}`;
+
+        // 모바일 인앱 브라우저 및 일반 브라우저 호환성을 위해 location.href 사용
+        // 만약 새 창을 원하시면 window.open(url, '_blank')를 써야 하지만, 
+        // 모바일에서는 현재 창 이동이 훨씬 더 안정적입니다.
+        window.location.href = url;
+    });
 }
 
 // [CTA Component]
