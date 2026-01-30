@@ -72,39 +72,35 @@ const foods = [
 
     // New Additions (25 items)
     // Korean
-    { id: 61, name: "육개장", category: "korean", spicy: 3, price: 10000, tags: ["국물", "얼큰", "든든"], desc: "소고기와 대파가 듬뿍 들어간 얼큰한 국물", image: "images/kimchi_stew.png", kcal: 450, carbo: 30, protein: 35, fat: 20 },
-    { id: 62, name: "곰탕", category: "korean", spicy: 0, price: 11000, tags: ["국물", "보양", "담백"], desc: "진하게 우려낸 고기 육수", image: "images/gukbap.jpg", kcal: 400, carbo: 5, protein: 45, fat: 25 },
-    { id: 63, name: "김치볶음밥", category: "korean", spicy: 1, price: 8000, tags: ["밥", "계란후라이", "간편"], desc: "잘 익은 김치로 볶아낸 맛", image: "images/bokkeumbap.jpg", kcal: 600, carbo: 90, protein: 15, fat: 20 },
-    { id: 64, name: "회덮밥", category: "korean", spicy: 1, price: 12000, tags: ["해산물", "야채", "신선"], desc: "신선한 회와 야채의 만남", image: "images/bibimbap.jpg", kcal: 500, carbo: 70, protein: 30, fat: 10 },
-    { id: 65, name: "청국장", category: "korean", spicy: 0, price: 9000, tags: ["국물", "진함", "전통"], desc: "구수하고 진한 고향의 맛", image: "images/doenjang.png", kcal: 450, carbo: 40, protein: 30, fat: 20 },
-
+    { id: 61, name: "육개장", category: "korean", spicy: 3, price: 10000, tags: ["국물", "얼큰", "든든"], desc: "소고기와 대파가 듬뿍 들어간 얼큰한 국물", image: "https://www.maangchi.com/wp-content/uploads/2008/02/yukgaejang.jpg", kcal: 500, carbo: 30, protein: 35, fat: 25 },
+    { id: 62, name: "곰탕", category: "korean", spicy: 0, price: 11000, tags: ["국물", "담백", "보양"], desc: "진하기 우려낸 고기 육수", image: "https://www.maangchi.com/wp-content/uploads/2013/11/gomtang.jpg", kcal: 400, carbo: 10, protein: 40, fat: 22 },
+    { id: 63, name: "김치볶음밥", category: "korean", spicy: 1, price: 8000, tags: ["볶음밥", "매콤", "가성비"], desc: "잘 익은 김치로 볶아낸 맛", image: "https://www.maangchi.com/wp-content/uploads/2010/01/kimchibokkeumbap2.jpg", kcal: 550, carbo: 85, protein: 15, fat: 15 },
+    { id: 64, name: "회덮밥", category: "korean", spicy: 2, price: 12000, tags: ["해산물", "신선", "야채"], desc: "신선한 회와 야채의 만남", image: "https://www.maangchi.com/wp-content/uploads/2017/04/hoedeopbap-1.jpg", kcal: 450, carbo: 60, protein: 30, fat: 10 },
+    { id: 65, name: "청국장", category: "korean", spicy: 1, price: 9000, tags: ["국물", "구수", "발효"], desc: "구수하고 진한 고향의 맛", image: "https://www.maangchi.com/wp-content/uploads/2007/04/cheonggukjang.jpg", kcal: 350, carbo: 25, protein: 25, fat: 18 },
     // Western
-    { id: 66, name: "에그 베네딕트", category: "western", spicy: 0, price: 14000, tags: ["브런치", "계란", "여유"], desc: "홀랜다이즈 소스의 부드러움", image: "images/brunch.jpg", kcal: 600, carbo: 40, protein: 25, fat: 40 },
-    { id: 67, name: "까르보나라", category: "western", spicy: 0, price: 15000, tags: ["면", "크림", "베이컨"], desc: "진하고 고소한 크림 파스타", image: "images/pasta.jpg", kcal: 800, carbo: 80, protein: 30, fat: 40 },
-    { id: 68, name: "피쉬앤칩스", category: "western", spicy: 0, price: 16000, tags: ["튀김", "생선", "영국"], desc: "겉바속촉 생선 튀김", image: "images/fried_chicken.jpg", kcal: 900, carbo: 70, protein: 40, fat: 50 },
-    { id: 69, name: "클럽 샌드위치", category: "western", spicy: 0, price: 10000, tags: ["간편", "푸짐", "샌드위치"], desc: "여러 층으로 쌓인 풍부한 맛", image: "images/sandwich.jpg", kcal: 550, carbo: 50, protein: 25, fat: 25 },
-    { id: 70, name: "비프 부르기뇽", category: "western", spicy: 0, price: 28000, tags: ["고기", "고급", "프랑스"], desc: "와인에 푹 고아낸 소고기 요리", image: "images/steak.jpg", kcal: 700, carbo: 30, protein: 50, fat: 40 },
-
+    { id: 66, name: "에그 베네딕트", category: "western", spicy: 0, price: 14000, tags: ["브런치", "계란", "고급"], desc: "홀랜다이즈 소스의 부드러움", image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Eggs_benedict_1.jpg", kcal: 580, carbo: 35, protein: 20, fat: 40 },
+    { id: 67, name: "까르보나라", category: "western", spicy: 0, price: 15000, tags: ["파스타", "크림", "베이컨"], desc: "진하고 고소한 크림 파스타", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/1024px-Espaguetis_carbonara.jpg", kcal: 700, carbo: 75, protein: 25, fat: 35 },
+    { id: 68, name: "피쉬앤칩스", category: "western", spicy: 0, price: 16000, tags: ["튀김", "생선", "영국"], desc: "겉바속촉 생선 튀김", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/1024px-Fish_and_chips_blackpool.jpg", kcal: 850, carbo: 65, protein: 35, fat: 50 },
+    { id: 69, name: "클럽 샌드위치", category: "western", spicy: 0, price: 10000, tags: ["빵", "든든", "베이컨"], desc: "여러 층으로 쌓인 풍부한 맛", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Club_sandwich.JPG/1024px-Club_sandwich.JPG", kcal: 620, carbo: 50, protein: 30, fat: 35 },
+    { id: 70, name: "비프 부르기뇽", category: "western", spicy: 0, price: 28000, tags: ["소고기", "와인", "프랑스"], desc: "와인에 푹 고아낸 소고기 요리", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Boeuf_bourguignon.jpg/1024px-Boeuf_bourguignon.jpg", kcal: 550, carbo: 20, protein: 45, fat: 30 },
     // Chinese
-    { id: 71, name: "꿔바로우", category: "chinese", spicy: 0, price: 22000, tags: ["튀김", "새콤달콤", "찹쌀"], desc: "쫀득한 식감의 북경식 탕수육", image: "images/tangsuyuk.jpg", kcal: 800, carbo: 80, protein: 30, fat: 40 },
-    { id: 72, name: "양장피", category: "chinese", spicy: 1, price: 30000, tags: ["해산물", "야채", "겨자"], desc: "코 끝 찡한 해산물 볶음 요리", image: "images/dim_sum.jpg", kcal: 500, carbo: 40, protein: 35, fat: 25 },
-    { id: 73, name: "동파육", category: "chinese", spicy: 0, price: 35000, tags: ["고기", "부드러움", "간장"], desc: "입에서 살살 녹는 돼지고기 찜", image: "images/bossam.jpg", kcal: 900, carbo: 20, protein: 50, fat: 70 },
-    { id: 74, name: "유린기", category: "chinese", spicy: 1, price: 25000, tags: ["튀김", "닭고기", "깔끔"], desc: "아삭한 야채와 새콤한 간장소스", image: "images/fried_chicken.jpg", kcal: 750, carbo: 50, protein: 40, fat: 45 },
-    { id: 75, name: "멘보샤", category: "chinese", spicy: 0, price: 18000, tags: ["튀김", "새우", "바삭"], desc: "새우살을 넣은 식빵 튀김", image: "images/twigim.jpg", kcal: 600, carbo: 40, protein: 20, fat: 45 },
-
+    { id: 71, name: "꿔바로우", category: "chinese", spicy: 1, price: 22000, tags: ["튀김", "쫀득", "돼지고기"], desc: "쫀득한 식감의 북경식 탕수육", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/%EA%BF%B0%EB%B0%94%EB%A1%9C%EC%9A%B0.jpg/1024px-%EA%BF%B0%EB%B0%94%EB%A1%9C%EC%9A%B0.jpg", kcal: 650, carbo: 70, protein: 25, fat: 30 },
+    { id: 72, name: "양장피", category: "chinese", spicy: 2, price: 30000, tags: ["해산물", "겨자", "아삭"], desc: "코 끝 찡한 해산물 볶음 요리", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Korean-style_Chinese_dish_Yangjang-pi.jpg/1024px-Korean-style_Chinese_dish_Yangjang-pi.jpg", kcal: 450, carbo: 40, protein: 30, fat: 15 },
+    { id: 73, name: "동파육", category: "chinese", spicy: 0, price: 35000, tags: ["돼지고기", "부드러움", "고급"], desc: "입에서 살살 녹는 돼지고기 찜", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dong-po_Pork_Red_Braised_Pork_Belly.jpg/1024px-Dong-po_Pork_Red_Braised_Pork_Belly.jpg", kcal: 800, carbo: 15, protein: 35, fat: 65 },
+    { id: 74, name: "유린기", category: "chinese", spicy: 2, price: 25000, tags: ["닭고기", "새콤", "야채"], desc: "아삭한 야채와 새콤한 간장소스", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Yuringi.jpg/1024px-Yuringi.jpg", kcal: 580, carbo: 45, protein: 35, fat: 30 },
+    { id: 75, name: "멘보샤", category: "chinese", spicy: 0, price: 18000, tags: ["새우", "빵", "튀김"], desc: "새우살을 넣은 식빵 튀김", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Menbosya.jpg/1024px-Menbosya.jpg", kcal: 420, carbo: 30, protein: 15, fat: 28 },
     // Japanese
-    { id: 76, name: "텐동", category: "japanese", spicy: 0, price: 13000, tags: ["튀김", "덮밥", "푸짐"], desc: "다양한 튀김이 올라간 덮밥", image: "images/twigim.jpg", kcal: 950, carbo: 120, protein: 30, fat: 40 },
-    { id: 77, name: "가츠동", category: "japanese", spicy: 0, price: 10000, tags: ["돈까스", "덮밥", "간편"], desc: "돈까스와 계란의 환상 조합", image: "images/tonkatsu.jpg", kcal: 850, carbo: 100, protein: 35, fat: 35 },
-    { id: 78, name: "오므라이스", category: "japanese", spicy: 0, price: 9000, tags: ["밥", "소스", "인기"], desc: "부드러운 계란 이불을 덮은 볶음밥", image: "images/bokkeumbap.jpg", kcal: 700, carbo: 90, protein: 20, fat: 30 },
-    { id: 79, name: "사케동", category: "japanese", spicy: 0, price: 15000, tags: ["연어", "덮밥", "신선"], desc: "입안에서 녹는 부드러운 연어", image: "images/sashimi.jpg", kcal: 650, carbo: 80, protein: 40, fat: 20 },
-    { id: 80, name: "스키야키", category: "japanese", spicy: 0, price: 22000, tags: ["고기", "국물", "나베"], desc: "간장 베이스의 일본식 소고기 전골", image: "images/budaejjigae.jpg", kcal: 800, carbo: 40, protein: 50, fat: 50 },
-
+    { id: 76, name: "텐동", category: "japanese", spicy: 0, price: 13000, tags: ["튀김", "덮밥", "일식"], desc: "다양한 튀김이 올라간 덮밥", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tendon_in_Tokyo.jpg/1024px-Tendon_in_Tokyo.jpg", kcal: 780, carbo: 95, protein: 20, fat: 35 },
+    { id: 77, name: "가츠동", category: "japanese", spicy: 0, price: 10000, tags: ["돈까스", "계란", "덮밥"], desc: "돈까스와 계란의 환상 조합", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Katsudon_001.jpg/1024px-Katsudon_001.jpg", kcal: 820, carbo: 100, protein: 35, fat: 30 },
+    { id: 78, name: "오므라이스", category: "japanese", spicy: 0, price: 9000, tags: ["계란", "볶음밥", "인기"], desc: "부드러운 계란 이불을 덮은 볶음밥", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Omuturaisu_by_is_as_in_Tokyo.jpg/1024px-Omuturaisu_by_is_as_in_Tokyo.jpg", kcal: 650, carbo: 85, protein: 20, fat: 25 },
+    { id: 79, name: "사케동", category: "japanese", spicy: 0, price: 15000, tags: ["연어", "신선", "덮밥"], desc: "입안에서 녹는 부드러운 연어", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Salmon_donburi.jpg/1024px-Salmon_donburi.jpg", kcal: 550, carbo: 70, protein: 30, fat: 15 },
+    { id: 80, name: "스키야키", category: "japanese", spicy: 0, price: 22000, tags: ["소고기", "전골", "달콤"], desc: "간장 베이스의 일본식 소고기 전골", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sukiyaki_001.jpg/1024px-Sukiyaki_001.jpg", kcal: 600, carbo: 35, protein: 40, fat: 35 },
     // Snacks/Others
-    { id: 81, name: "팥빙수", category: "snack", spicy: 0, price: 12000, tags: ["여름", "달콤", "시원"], desc: "시원한 얼음과 달콤한 팥", image: "images/salad.jpg", kcal: 500, carbo: 100, protein: 10, fat: 5 },
-    { id: 82, name: "호떡", category: "snack", spicy: 0, price: 2000, tags: ["겨울", "달콤", "길거리"], desc: "꿀이 듬뿍 들어간 쫄깃한 간식", image: "images/toast.jpg", kcal: 300, carbo: 50, protein: 5, fat: 10 },
-    { id: 83, name: "붕어빵", category: "snack", spicy: 0, price: 2000, tags: ["겨울", "단팥", "슈크림"], desc: "찬바람 불면 생각나는 친구", image: "images/toast.jpg", kcal: 250, carbo: 40, protein: 5, fat: 8 },
-    { id: 84, name: "베이글", category: "snack", spicy: 0, price: 4500, tags: ["빵", "아침", "든든"], desc: "크림치즈와 찰떡궁합", image: "images/sandwich.jpg", kcal: 450, carbo: 70, protein: 15, fat: 15 },
-    { id: 85, name: "탕후루", category: "snack", spicy: 0, price: 4000, tags: ["과일", "달콤", "간식"], desc: "바삭한 설탕 코팅 속 상큼한 과일", image: "images/taco.jpg", kcal: 200, carbo: 50, protein: 0, fat: 0 }
+    { id: 81, name: "팥빙수", category: "snack", spicy: 0, price: 12000, tags: ["얼음", "팥", "시원"], desc: "시원한 얼음과 달콤한 팥", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Korean_dessert-Patbingsu-01.jpg/1024px-Korean_dessert-Patbingsu-01.jpg", kcal: 450, carbo: 90, protein: 10, fat: 5 },
+    { id: 82, name: "호떡", category: "snack", spicy: 0, price: 2000, tags: ["꿀", "겨울", "쫄깃"], desc: "꿀이 듬뿍 들어간 쫄깃한 간식", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hotteok.jpg/1024px-Hotteok.jpg", kcal: 300, carbo: 50, protein: 5, fat: 10 },
+    { id: 83, name: "붕어빵", category: "snack", spicy: 0, price: 2000, tags: ["겨울", "팥", "슈크림"], desc: "찬바람 불면 생각나는 친구", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bungeoppang.jpg/1024px-Bungeoppang.jpg", kcal: 250, carbo: 45, protein: 4, fat: 6 },
+    { id: 84, name: "베이글", category: "snack", spicy: 0, price: 4500, tags: ["빵", "아침", "담백"], desc: "크림치즈와 찰떡궁합", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bagel-Plain-Alt.jpg/1024px-Bagel-Plain-Alt.jpg", kcal: 320, carbo: 60, protein: 10, fat: 5 },
+    { id: 85, name: "탕후루", category: "snack", spicy: 0, price: 4000, tags: ["과일", "달콤", "인기"], desc: "바삭한 설탕 코팅 속 상큼한 과일", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tanghulu.jpg/1024px-Tanghulu.jpg", kcal: 280, carbo: 65, protein: 1, fat: 1 }
 ];
 
 
