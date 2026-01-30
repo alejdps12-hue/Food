@@ -1,25 +1,25 @@
 const foods = [
     // Korean (20 items)
-    { id: 1, name: "김치찌개", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kimchi-jjigae.jpg/800px-Kimchi-jjigae.jpg", desc: "한국인의 소울푸드, 얼큰한 김치찌개" },
-    { id: 2, name: "된장찌개", category: "korean", price: 8000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Doenjang-jjigae-1.jpg/800px-Doenjang-jjigae-1.jpg", desc: "구수한 국물과 두부의 조화" },
-    { id: 3, name: "비빔밥", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Korean_cuisine-Bibimbap-01.jpg/800px-Korean_cuisine-Bibimbap-01.jpg", desc: "여러가지 나물과 고추장의 만남" },
-    { id: 4, name: "삼겹살", category: "korean", price: 16000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Samgyeopsal_gu-i.jpg/800px-Samgyeopsal_gu-i.jpg", desc: "지글지글 구워먹는 삼겹살" },
-    { id: 5, name: "불고기", category: "korean", price: 12000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Bulgogi-2.jpg/800px-Bulgogi-2.jpg", desc: "남녀노소 좋아하는 달콤 짭짤한 맛" },
-    { id: 6, name: "국밥", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Seonji-guk_2.jpg/800px-Seonji-guk_2.jpg", desc: "뜨끈한 국물에 밥 한 그릇 뚝딱" },
-    { id: 7, name: "냉면", category: "korean", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Naengmyeon.jpg/800px-Naengmyeon.jpg", desc: "살얼음 동동 띄운 시원한 육수" },
-    { id: 8, name: "닭갈비", category: "korean", price: 13000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Dak-galbi-1.jpg/800px-Dak-galbi-1.jpg", desc: "매콤한 양념에 볶아먹는 닭고기" },
-    { id: 9, name: "순두부찌개", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sundubu-jjigae-2.jpg/800px-Sundubu-jjigae-2.jpg", desc: "부드러운 순두부와 얼큰한 국물" },
-    { id: 10, name: "제육볶음", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Jeyuk-bokkeum.jpg/800px-Jeyuk-bokkeum.jpg", desc: "매콤달콤한 양념 돼지고기" },
-    { id: 11, name: "감자탕", category: "korean", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gamja-tang.jpg/800px-Gamja-tang.jpg", desc: "진한 국물과 부드러운 등뼈" },
-    { id: 12, name: "부대찌개", category: "korean", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Budae-jjigae.jpg/800px-Budae-jjigae.jpg", desc: "햄과 라면의 완벽한 조화" },
-    { id: 13, name: "설렁탕", category: "korean", price: 11000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Seolleongtang-1.jpg/800px-Seolleongtang-1.jpg", desc: "뽀얀 국물의 깊은 맛" },
-    { id: 14, name: "갈비탕", category: "korean", price: 14000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Galbi-tang.jpg/800px-Galbi-tang.jpg", desc: "큼직한 갈비가 들어간 보양식" },
-    { id: 15, name: "닭볶음탕", category: "korean", price: 25000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Dak-bokkeum-tang.jpg/800px-Dak-bokkeum-tang.jpg", desc: "매콤한 국물에 빠진 닭고기" },
-    { id: 16, name: "보쌈", category: "korean", price: 30000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bossam-1.jpg/800px-Bossam-1.jpg", desc: "부드럽게 삶아낸 돼지고기" },
-    { id: 17, name: "족발", category: "korean", price: 35000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jokbal.jpg/800px-Jokbal.jpg", desc: "콜라겐 가득 쫄깃한 맛" },
-    { id: 18, name: "낙지볶음", category: "korean", price: 12000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nakji-bokkeum.jpg/800px-Nakji-bokkeum.jpg", desc: "화끈하게 매운 낙지 요리" },
-    { id: 19, name: "칼국수", category: "korean", price: 8000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Kalguksu.jpg/800px-Kalguksu.jpg", desc: "뜨끈한 국물과 쫄깃한 면발" },
-    { id: 20, name: "콩국수", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kong-guksu.jpg/800px-Kong-guksu.jpg", desc: "여름 별미 고소한 콩국물" },
+    { id: 1, name: "김치찌개", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kimchi-jjigae.jpg?width=800", desc: "한국인의 소울푸드, 얼큰한 김치찌개" },
+    { id: 2, name: "된장찌개", category: "korean", price: 8000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Doenjang-jjigae-1.jpg?width=800", desc: "구수한 국물과 두부의 조화" },
+    { id: 3, name: "비빔밥", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean_cuisine-Bibimbap-01.jpg?width=800", desc: "여러가지 나물과 고추장의 만남" },
+    { id: 4, name: "삼겹살", category: "korean", price: 16000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Samgyeopsal_gu-i.jpg?width=800", desc: "지글지글 구워먹는 삼겹살" },
+    { id: 5, name: "불고기", category: "korean", price: 12000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bulgogi-2.jpg?width=800", desc: "남녀노소 좋아하는 달콤 짭짤한 맛" },
+    { id: 6, name: "국밥", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Seonji-guk_2.jpg?width=800", desc: "뜨끈한 국물에 밥 한 그릇 뚝딱" },
+    { id: 7, name: "냉면", category: "korean", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Naengmyeon.jpg?width=800", desc: "살얼음 동동 띄운 시원한 육수" },
+    { id: 8, name: "닭갈비", category: "korean", price: 13000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dak-galbi-1.jpg?width=800", desc: "매콤한 양념에 볶아먹는 닭고기" },
+    { id: 9, name: "순두부찌개", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sundubu-jjigae-2.jpg?width=800", desc: "부드러운 순두부와 얼큰한 국물" },
+    { id: 10, name: "제육볶음", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jeyuk-bokkeum.jpg?width=800", desc: "매콤달콤한 양념 돼지고기" },
+    { id: 11, name: "감자탕", category: "korean", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gamja-tang.jpg?width=800", desc: "진한 국물과 부드러운 등뼈" },
+    { id: 12, name: "부대찌개", category: "korean", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Budae-jjigae.jpg?width=800", desc: "햄과 라면의 완벽한 조화" },
+    { id: 13, name: "설렁탕", category: "korean", price: 11000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Seolleongtang-1.jpg?width=800", desc: "뽀얀 국물의 깊은 맛" },
+    { id: 14, name: "갈비탕", category: "korean", price: 14000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Galbi-tang.jpg?width=800", desc: "큼직한 갈비가 들어간 보양식" },
+    { id: 15, name: "닭볶음탕", category: "korean", price: 25000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dak-bokkeum-tang.jpg?width=800", desc: "매콤한 국물에 빠진 닭고기" },
+    { id: 16, name: "보쌈", category: "korean", price: 30000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bossam-1.jpg?width=800", desc: "부드럽게 삶아낸 돼지고기" },
+    { id: 17, name: "족발", category: "korean", price: 35000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jokbal.jpg?width=800", desc: "콜라겐 가득 쫄깃한 맛" },
+    { id: 18, name: "낙지볶음", category: "korean", price: 12000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Nakji-bokkeum.jpg?width=800", desc: "화끈하게 매운 낙지 요리" },
+    { id: 19, name: "칼국수", category: "korean", price: 8000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kalguksu.jpg?width=800", desc: "뜨끈한 국물과 쫄깃한 면발" },
+    { id: 20, name: "콩국수", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kong-guksu.jpg?width=800", desc: "여름 별미 고소한 콩국물" },
 
     // Western (12 items)
     { id: 21, name: "피자", category: "western", price: 20000, image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop", desc: "치즈가 쭉 늘어나는 행복" },
@@ -36,74 +36,74 @@ const foods = [
     { id: 32, name: "핫윙", category: "western", price: 15000, image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&auto=format&fit=crop", desc: "매콤한 버팔로 윙" },
 
     // Chinese (10 items)
-    { id: 33, name: "짜장면", category: "chinese", price: 7000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jajangmyeon.jpg/800px-Jajangmyeon.jpg", desc: "언제 먹어도 맛있는 짜장면" },
-    { id: 34, name: "짬뽕", category: "chinese", price: 8000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jjamppong.jpg/800px-Jjamppong.jpg", desc: "속 풀리는 얼큰한 국물" },
-    { id: 35, name: "탕수육", category: "chinese", price: 18000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tangsuyuk-1.jpg/800px-Tangsuyuk-1.jpg", desc: "바삭하고 달콤한 소스" },
-    { id: 36, name: "마라탕", category: "chinese", price: 12000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Malatang.jpg/800px-Malatang.jpg", desc: "얼얼하게 매운 중독적인 맛" },
-    { id: 37, name: "볶음밥", category: "chinese", price: 8000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Chinese_fried_rice.jpg/800px-Chinese_fried_rice.jpg", desc: "고슬고슬하게 볶아낸 밥" },
-    { id: 38, name: "마파두부", category: "chinese", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mapo_Doufu.jpg/800px-Mapo_Doufu.jpg", desc: "부드러운 두부와 매콤한 소스" },
-    { id: 39, name: "딤섬", category: "chinese", price: 15000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dim_sum_platter.jpg/800px-Dim_sum_platter.jpg", desc: "육즙 가득한 만두" },
-    { id: 40, name: "양꼬치", category: "chinese", price: 15000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Yangrouchuar.jpg/800px-Yangrouchuar.jpg", desc: "돌아가며 굽는 재미" },
-    { id: 41, name: "깐풍기", category: "chinese", price: 25000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Kkanpunggi.jpg/800px-Kkanpunggi.jpg", desc: "매콤새콤한 닭튀김 요리" },
-    { id: 42, name: "고추잡채", category: "chinese", price: 28000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Gochu-japchae.jpg/800px-Gochu-japchae.jpg", desc: "꽃빵에 싸먹는 즐거움" },
+    { id: 33, name: "짜장면", category: "chinese", price: 7000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jajangmyeon.jpg?width=800", desc: "언제 먹어도 맛있는 짜장면" },
+    { id: 34, name: "짬뽕", category: "chinese", price: 8000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jjamppong.jpg?width=800", desc: "속 풀리는 얼큰한 국물" },
+    { id: 35, name: "탕수육", category: "chinese", price: 18000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tangsuyuk-1.jpg?width=800", desc: "바삭하고 달콤한 소스" },
+    { id: 36, name: "마라탕", category: "chinese", price: 12000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Malatang.jpg?width=800", desc: "얼얼하게 매운 중독적인 맛" },
+    { id: 37, name: "볶음밥", category: "chinese", price: 8000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Chinese_fried_rice.jpg?width=800", desc: "고슬고슬하게 볶아낸 밥" },
+    { id: 38, name: "마파두부", category: "chinese", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Mapo_Doufu.jpg?width=800", desc: "부드러운 두부와 매콤한 소스" },
+    { id: 39, name: "딤섬", category: "chinese", price: 15000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dim_sum_platter.jpg?width=800", desc: "육즙 가득한 만두" },
+    { id: 40, name: "양꼬치", category: "chinese", price: 15000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Yangrouchuar.jpg?width=800", desc: "돌아가며 굽는 재미" },
+    { id: 41, name: "깐풍기", category: "chinese", price: 25000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kkanpunggi.jpg?width=800", desc: "매콤새콤한 닭튀김 요리" },
+    { id: 42, name: "고추잡채", category: "chinese", price: 28000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gochu-japchae.jpg?width=800", desc: "꽃빵에 싸먹는 즐거움" },
 
     // Japanese (10 items)
     { id: 43, name: "초밥", category: "japanese", price: 18000, image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&auto=format&fit=crop", desc: "신선한 회와 밥의 조화" },
-    { id: 44, name: "돈까스", category: "japanese", price: 11000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Tonkatsu.jpg/800px-Tonkatsu.jpg", desc: "바삭바삭한 튀김옷과 육즙" },
-    { id: 45, name: "우동", category: "japanese", price: 7000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Udon_001.jpg/800px-Udon_001.jpg", desc: "오통통한 면발과 따뜻한 국물" },
+    { id: 44, name: "돈까스", category: "japanese", price: 11000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tonkatsu.jpg?width=800", desc: "바삭바삭한 튀김옷과 육즙" },
+    { id: 45, name: "우동", category: "japanese", price: 7000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Udon_001.jpg?width=800", desc: "오통통한 면발과 따뜻한 국물" },
     { id: 46, name: "라멘", category: "japanese", price: 10000, image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&auto=format&fit=crop", desc: "진한 돈코츠 육수의 맛" },
-    { id: 47, name: "규동", category: "japanese", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Gyudon_by_ayuston_in_Tokyo.jpg/800px-Gyudon_by_ayuston_in_Tokyo.jpg", desc: "단짠단짠 소고기 덮밥" },
-    { id: 48, name: "야키소바", category: "japanese", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Yakisoba_001.jpg/800px-Yakisoba_001.jpg", desc: "철판에 볶아낸 면 요리" },
-    { id: 49, name: "타코야키", category: "japanese", price: 5000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Takoyaki_001.jpg/800px-Takoyaki_001.jpg", desc: "동글동글 문어가 씹히는 맛" },
+    { id: 47, name: "규동", category: "japanese", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gyudon_by_ayuston_in_Tokyo.jpg?width=800", desc: "단짠단짠 소고기 덮밥" },
+    { id: 48, name: "야키소바", category: "japanese", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Yakisoba_001.jpg?width=800", desc: "철판에 볶아낸 면 요리" },
+    { id: 49, name: "타코야키", category: "japanese", price: 5000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Takoyaki_001.jpg?width=800", desc: "동글동글 문어가 씹히는 맛" },
     { id: 50, name: "사시미", category: "japanese", price: 35000, image: "https://images.unsplash.com/photo-1534422298391-e4f8c170db0f?w=800&auto=format&fit=crop", desc: "본연의 맛을 즐기는 회" },
-    { id: 51, name: "메밀소바", category: "japanese", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Zaru_Soba.jpg/800px-Zaru_Soba.jpg", desc: "쯔유에 적셔먹는 시원한 면" },
-    { id: 52, name: "오코노미야키", category: "japanese", price: 15000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/800px-Okonomiyaki_001.jpg", desc: "일본식 부침개" },
+    { id: 51, name: "메밀소바", category: "japanese", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Zaru_Soba.jpg?width=800", desc: "쯔유에 적셔먹는 시원한 면" },
+    { id: 52, name: "오코노미야키", category: "japanese", price: 15000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Okonomiyaki_001.jpg?width=800", desc: "일본식 부침개" },
 
     // Snack (8 items)
-    { id: 53, name: "떡볶이", category: "snack", price: 5000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tteok-bokki_2.jpg/800px-Tteok-bokki_2.jpg", desc: "매콤달콤한 국민 간식" },
-    { id: 54, name: "순대", category: "snack", price: 5000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sundae_%28Korean_food%29.jpg/800px-Sundae_%28Korean_food%29.jpg", desc: "소금이나 막장에 콕" },
+    { id: 53, name: "떡볶이", category: "snack", price: 5000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tteok-bokki_2.jpg?width=800", desc: "매콤달콤한 국민 간식" },
+    { id: 54, name: "순대", category: "snack", price: 5000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sundae_(Korean_food).jpg?width=800", desc: "소금이나 막장에 콕" },
     { id: 55, name: "라면", category: "snack", price: 4000, image: "https://images.unsplash.com/photo-1552611052-33e04de081de?w=800&auto=format&fit=crop", desc: "가장 맛있는 한 끼" },
-    { id: 56, name: "김밥", category: "snack", price: 4000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Gimbap_1.jpg/800px-Gimbap_1.jpg", desc: "한 줄로 든든한 식사" },
+    { id: 56, name: "김밥", category: "snack", price: 4000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gimbap_1.jpg?width=800", desc: "한 줄로 든든한 식사" },
     { id: 57, name: "핫도그", category: "snack", price: 3000, image: "https://images.unsplash.com/photo-1541214159679-d457c9b889fa?w=800&auto=format&fit=crop", desc: "바삭하고 짭짤한 맛" },
     { id: 58, name: "토스트", category: "snack", price: 4000, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&auto=format&fit=crop", desc: "버터 향 가득한 토스트" },
-    { id: 59, name: "어묵", category: "snack", price: 3000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Korean_street_food-Eomuk_tang-kkochi-01.jpg/800px-Korean_street_food-Eomuk_tang-kkochi-01.jpg", desc: "추운 날 생각나는 그 맛" },
-    { id: 60, name: "튀김", category: "snack", price: 5000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Korean_street_foods-Gimsari_and_Yachae_twigim-01.jpg/800px-Korean_street_foods-Gimsari_and_Yachae_twigim-01.jpg", desc: "떡볶이 국물과 찰떡궁합" },
+    { id: 59, name: "어묵", category: "snack", price: 3000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean_street_food-Eomuk_tang-kkochi-01.jpg?width=800", desc: "추운 날 생각나는 그 맛" },
+    { id: 60, name: "튀김", category: "snack", price: 5000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean_street_foods-Gimsari_and_Yachae_twigim-01.jpg?width=800", desc: "떡볶이 국물과 찰떡궁합" },
 
     // New Additions (25 items)
     // Korean
-    { id: 61, name: "육개장", category: "korean", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yukgaejang.jpg/800px-Yukgaejang.jpg", desc: "소고기와 대파가 듬뿍 들어간 얼큰한 국물" },
-    { id: 62, name: "곰탕", category: "korean", price: 11000, image: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gomtang.jpg", desc: "진하게 우려낸 고기 육수" },
-    { id: 63, name: "김치볶음밥", category: "korean", price: 8000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Kimchi_fried_rice.jpg/800px-Kimchi_fried_rice.jpg", desc: "잘 익은 김치로 볶아낸 맛" },
-    { id: 64, name: "회덮밥", category: "korean", price: 12000, image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Korean_cuisine-Bibimbap-01.jpg", desc: "신선한 회와 야채의 만남" },
-    { id: 65, name: "청국장", category: "korean", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Cheonggukjang.jpg", desc: "구수하고 진한 고향의 맛" },
+    { id: 61, name: "육개장", category: "korean", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Yukgaejang.jpg?width=800", desc: "소고기와 대파가 듬뿍 들어간 얼큰한 국물" },
+    { id: 62, name: "곰탕", category: "korean", price: 11000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gomtang.jpg?width=800", desc: "진히게 우려낸 고기 육수" },
+    { id: 63, name: "김치볶음밥", category: "korean", price: 8000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kimchi_fried_rice.jpg?width=800", desc: "잘 익은 김치로 볶아낸 맛" },
+    { id: 64, name: "회덮밥", category: "korean", price: 12000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean_cuisine-Bibimbap-01.jpg?width=800", desc: "신선한 회와 야채의 만남" },
+    { id: 65, name: "청국장", category: "korean", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggukjang.jpg?width=800", desc: "구수하고 진한 고향의 맛" },
 
     // Western
-    { id: 66, name: "에그 베네딕트", category: "western", price: 14000, image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Eggs_benedict_1.jpg", desc: "홀랜다이즈 소스의 부드러움" },
-    { id: 67, name: "까르보나라", category: "western", price: 15000, image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Espaguetis_carbonara.jpg", desc: "진하고 고소한 크림 파스타" },
-    { id: 68, name: "피쉬앤칩스", category: "western", price: 16000, image: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Fish_and_chips_blackpool.jpg", desc: "겉바속촉 생선 튀김" },
-    { id: 69, name: "클럽 샌드위치", category: "western", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Club_sandwich.JPG", desc: "여러 층으로 쌓인 풍부한 맛" },
-    { id: 70, name: "비프 부르기뇽", category: "western", price: 28000, image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Boeuf_bourguignon.jpg", desc: "와인에 푹 고아낸 소고기 요리" },
+    { id: 66, name: "에그 베네딕트", category: "western", price: 14000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Eggs_benedict_1.jpg?width=800", desc: "홀랜다이즈 소스의 부드러움" },
+    { id: 67, name: "까르보나라", category: "western", price: 15000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Espaguetis_carbonara.jpg?width=800", desc: "진하고 고소한 크림 파스타" },
+    { id: 68, name: "피쉬앤칩스", category: "western", price: 16000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Fish_and_chips_blackpool.jpg?width=800", desc: "겉바속촉 생선 튀김" },
+    { id: 69, name: "클럽 샌드위치", category: "western", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Club_sandwich.JPG?width=800", desc: "여러 층으로 쌓인 풍부한 맛" },
+    { id: 70, name: "비프 부르기뇽", category: "western", price: 28000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Boeuf_bourguignon.jpg?width=800", desc: "와인에 푹 고아낸 소고기 요리" },
 
     // Chinese
-    { id: 71, name: "꿔바로우", category: "chinese", price: 22000, image: "https://upload.wikimedia.org/wikipedia/commons/c/c8/%EA%BF%B0%EB%B0%94%EB%A1%9C%EC%9A%B0.jpg", desc: "쫀득한 식감의 북경식 탕수육" },
-    { id: 72, name: "양장피", category: "chinese", price: 30000, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Korean-style_Chinese_dish_Yangjang-pi.jpg/800px-Korean-style_Chinese_dish_Yangjang-pi.jpg", desc: "코 끝 찡한 해산물 볶음 요리" },
-    { id: 73, name: "동파육", category: "chinese", price: 35000, image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Dong-po_Pork_Red_Braised_Pork_Belly.jpg", desc: "입에서 살살 녹는 돼지고기 찜" },
-    { id: 74, name: "유린기", category: "chinese", price: 25000, image: "https://upload.wikimedia.org/wikipedia/commons/b/be/Yuringi.jpg", desc: "아삭한 야채와 새콤한 간장소스" },
-    { id: 75, name: "멘보샤", category: "chinese", price: 18000, image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Menbosya.jpg", desc: "새우살을 넣은 식빵 튀김" },
+    { id: 71, name: "꿔바로우", category: "chinese", price: 22000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/%EA%BF%B0%EB%B0%94%EB%A1%9C%EC%9A%B0.jpg?width=800", desc: "쫀득한 식감의 북경식 탕수육" },
+    { id: 72, name: "양장피", category: "chinese", price: 30000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean-style_Chinese_dish_Yangjang-pi.jpg?width=800", desc: "코 끝 찡한 해산물 볶음 요리" },
+    { id: 73, name: "동파육", category: "chinese", price: 35000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dong-po_Pork_Red_Braised_Pork_Belly.jpg?width=800", desc: "입에서 살살 녹는 돼지고기 찜" },
+    { id: 74, name: "유린기", category: "chinese", price: 25000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Yuringi.jpg?width=800", desc: "아삭한 야채와 새콤한 간장소스" },
+    { id: 75, name: "멘보샤", category: "chinese", price: 18000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Menbosya.jpg?width=800", desc: "새우살을 넣은 식빵 튀김" },
 
     // Japanese
-    { id: 76, name: "텐동", category: "japanese", price: 13000, image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Tendon_in_Tokyo.jpg", desc: "다양한 튀김이 올라간 덮밥" },
-    { id: 77, name: "가츠동", category: "japanese", price: 10000, image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Katsudon_001.jpg", desc: "돈까스와 계란의 환상 조합" },
-    { id: 78, name: "오므라이스", category: "japanese", price: 9000, image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Omuturaisu_by_is_as_in_Tokyo.jpg", desc: "부드러운 계란 이불을 덮은 볶음밥" },
-    { id: 79, name: "사케동", category: "japanese", price: 15000, image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Salmon_donburi.jpg", desc: "입안에서 녹는 부드러운 연어" },
-    { id: 80, name: "스키야키", category: "japanese", price: 22000, image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sukiyaki_001.jpg", desc: "간장 베이스의 일본식 소고기 전골" },
+    { id: 76, name: "텐동", category: "japanese", price: 13000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tendon_in_Tokyo.jpg?width=800", desc: "다양한 튀김이 올라간 덮밥" },
+    { id: 77, name: "가츠동", category: "japanese", price: 10000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Katsudon_001.jpg?width=800", desc: "돈까스와 계란의 환상 조합" },
+    { id: 78, name: "오므라이스", category: "japanese", price: 9000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Omuturaisu_by_is_as_in_Tokyo.jpg?width=800", desc: "부드러운 계란 이불을 덮은 볶음밥" },
+    { id: 79, name: "사케동", category: "japanese", price: 15000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Salmon_donburi.jpg?width=800", desc: "입안에서 녹는 부드러운 연어" },
+    { id: 80, name: "스키야키", category: "japanese", price: 22000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sukiyaki_001.jpg?width=800", desc: "간장 베이스의 일본식 소고기 전골" },
 
     // Snacks/Others
-    { id: 81, name: "팥빙수", category: "snack", price: 12000, image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Korean_dessert-Patbingsu-01.jpg", desc: "시원한 얼음과 달콤한 팥" },
-    { id: 82, name: "호떡", category: "snack", price: 2000, image: "https://upload.wikimedia.org/wikipedia/commons/6/69/Hotteok.jpg", desc: "꿀이 듬뿍 들어간 쫄깃한 간식" },
-    { id: 83, name: "붕어빵", category: "snack", price: 2000, image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bungeoppang.jpg", desc: "찬바람 불면 생각나는 친구" },
-    { id: 84, name: "베이글", category: "snack", price: 4500, image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bagel-Plain-Alt.jpg", desc: "크림치즈와 찰떡궁합" },
-    { id: 85, name: "탕후루", category: "snack", price: 4000, image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Tanghulu.jpg", desc: "바삭한 설탕 코팅 속 상큼한 과일" }
+    { id: 81, name: "팥빙수", category: "snack", price: 12000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Korean_dessert-Patbingsu-01.jpg?width=800", desc: "시원한 얼음과 달콤한 팥" },
+    { id: 82, name: "호떡", category: "snack", price: 2000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Hotteok.jpg?width=800", desc: "꿀이 듬뿍 들어간 쫄깃한 간식" },
+    { id: 83, name: "붕어빵", category: "snack", price: 2000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bungeoppang.jpg?width=800", desc: "찬바람 불면 생각나는 친구" },
+    { id: 84, name: "베이글", category: "snack", price: 4500, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bagel-Plain-Alt.jpg?width=800", desc: "크림치즈와 찰떡궁합" },
+    { id: 85, name: "탕후루", category: "snack", price: 4000, image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tanghulu.jpg?width=800", desc: "바삭한 설탕 코팅 속 상큼한 과일" }
 ];
 
 const recommendBtn = document.getElementById('recommend-btn');
@@ -155,7 +155,7 @@ recommendBtn.addEventListener('click', () => {
 function renderResult(food) {
     // Check if food has image
     const visualElement = food.image
-        ? `<img src="${food.image}" alt="${food.name}" class="food-image">`
+        ? `<img src="${food.image}" alt="${food.name}" referrerpolicy="no-referrer" class="food-image">`
         : `<span class="food-emoji">${food.emoji}</span>`;
 
     resultDisplay.innerHTML = `
