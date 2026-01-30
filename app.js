@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     app.innerHTML = `
         <header class="sticky top-0 z-50 glass border-b border-gray-800">
             <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-                <h1 class="text-xl font-bold text-neon-cyan neon-text">FoodPick</h1>
+                <h1 class="text-xl font-bold text-neon-cyan neon-text">FoodPick <span class="text-xs font-normal text-gray-500 ml-2">(Data: ${foods.length})</span></h1>
                 <button id="header-cta" class="text-sm bg-neon-purple px-4 py-1.5 rounded-full hover:bg-purple-500 transition">취향 저장</button>
             </div>
         </header>
